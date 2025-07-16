@@ -499,7 +499,7 @@ html {
 
 .skill-item {
     background: var(--bg-primary);
-    padding: 30px;
+    padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-light);
     transition: var(--transition);
