@@ -600,14 +600,14 @@ html {
 
 .project-description {
     color: var(--text-secondary);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     line-height: 1.6;
 }
 
 .project-tech {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 2px;
     margin-bottom: 20px;
 }
 
