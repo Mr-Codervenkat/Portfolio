@@ -214,7 +214,8 @@ html {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 50px;
+    
 }
 
 .nav-link {
@@ -430,7 +431,7 @@ html {
 .about-text p {
     font-size: 1.1rem;
     color: var(--text-secondary);
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     line-height: 1.8;
 }
 
