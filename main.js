@@ -1,5 +1,5 @@
 // DOM Content Loaded
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize AOS
     AOS.init({
         duration: 1000,
@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Preloader
     const preloader = document.getElementById('preloader');
-    
-    window.addEventListener('load', function() {
+
+    window.addEventListener('load', function () {
         setTimeout(() => {
             preloader.classList.add('hidden');
         }, 1000);
@@ -23,21 +23,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-link');
 
     // Mobile menu toggle
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', function () {
         navMenu.classList.toggle('active');
         navToggle.classList.toggle('active');
     });
 
     // Close mobile menu when clicking on a link
     navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function () {
             navMenu.classList.remove('active');
             navToggle.classList.remove('active');
         });
     });
 
     // Navbar scroll effect
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 100) {
             navbar.classList.add('scrolled');
         } else {
@@ -47,15 +47,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Active link highlighting
     const sections = document.querySelectorAll('section');
-    
+
     function updateActiveLink() {
         const scrollPosition = window.scrollY + 100;
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
             const sectionId = section.getAttribute('id');
-            
+
             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
                 navLinks.forEach(link => {
                     link.classList.remove('active');
@@ -71,11 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Smooth scrolling for nav links
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
-            
+
             if (targetSection) {
                 const offsetTop = targetSection.offsetTop - 70;
                 window.scrollTo({
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function typeText() {
         const currentText = textArray[textIndex];
-        
+
         if (isDeleting) {
             typedTextElement.textContent = currentText.substring(0, charIndex - 1);
             charIndex--;
@@ -132,10 +132,10 @@ document.addEventListener('DOMContentLoaded', function() {
         updateThemeIcon(savedTheme);
     }
 
-    themeToggle.addEventListener('click', function() {
+    themeToggle.addEventListener('click', function () {
         const currentTheme = body.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         body.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
         updateThemeIcon(newTheme);
@@ -157,14 +157,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function animateSkills() {
         if (skillsAnimated) return;
-        
+
         const sectionTop = skillsSection.offsetTop;
         const sectionHeight = skillsSection.offsetHeight;
         const scrollPosition = window.scrollY + window.innerHeight;
-        
+
         if (scrollPosition >= sectionTop + 100) {
             skillsAnimated = true;
-            
+
             progressBars.forEach(bar => {
                 const width = bar.getAttribute('data-width');
                 bar.style.width = width + '%';
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Back to top button
     const backToTopBtn = document.getElementById('back-to-top');
 
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             backToTopBtn.classList.add('show');
         } else {
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    backToTopBtn.addEventListener('click', function() {
+    backToTopBtn.addEventListener('click', function () {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
@@ -195,16 +195,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Contact form handling
     const contactForm = document.querySelector('.contact-form');
-    
-    contactForm.addEventListener('submit', function(e) {
+
+    contactForm.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         // Get form data
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         const email = formData.get('email');
         const message = formData.get('message');
-        
+
         // Simple validation
         if (name && email && message) {
             // Show success message
@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const notification = document.createElement('div');
         notification.className = `notification ${type}`;
         notification.textContent = message;
-        
+
         // Add notification styles
         notification.style.cssText = `
             position: fixed;
@@ -235,14 +235,14 @@ document.addEventListener('DOMContentLoaded', function() {
             transition: transform 0.3s ease;
             ${type === 'success' ? 'background: #10b981;' : 'background: #ef4444;'}
         `;
-        
+
         document.body.appendChild(notification);
-        
+
         // Show notification
         setTimeout(() => {
             notification.style.transform = 'translateX(0)';
         }, 100);
-        
+
         // Hide and remove notification
         setTimeout(() => {
             notification.style.transform = 'translateX(100%)';
@@ -254,24 +254,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Resume download functionality
     const downloadResumeBtn = document.getElementById('download-resume');
-    
-    downloadResumeBtn.addEventListener('click', function(e) {
+
+    downloadResumeBtn.addEventListener('click', function (e) {
         e.preventDefault();
-        
+
         // Create a mock PDF download
         const link = document.createElement('a');
         link.href = 'Required images\Venkat-Resume..pdf';
         link.download = 'Required images\Venkat-Resume..pdf';
         link.click();
-        
+
         showNotification('Resume downloaded successfully!', 'success');
     });
 
     // Parallax effect for hero section
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         const scrolled = window.pageYOffset;
         const parallaxElements = document.querySelectorAll('.hero-img-container');
-        
+
         parallaxElements.forEach(element => {
             const speed = 0.5;
             element.style.transform = `translateY(${scrolled * speed}px)`;
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function() {
         rootMargin: '0px 0px -50px 0px'
     };
 
-    const observer = new IntersectionObserver(function(entries) {
+    const observer = new IntersectionObserver(function (entries) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
@@ -304,27 +304,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Smooth hover effects for project cards
     const projectCards = document.querySelectorAll('.project-card');
-    
+
     projectCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
+        card.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-10px) scale(1.02)';
         });
-        
-        card.addEventListener('mouseleave', function() {
+
+        card.addEventListener('mouseleave', function () {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
 
     // Loading animation for buttons
     const buttons = document.querySelectorAll('.btn');
-    
+
     buttons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function () {
             if (!this.classList.contains('loading')) {
                 this.classList.add('loading');
                 const originalText = this.textContent;
                 this.textContent = 'Loading...';
-                
+
                 setTimeout(() => {
                     this.classList.remove('loading');
                     this.textContent = originalText;
@@ -335,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Add custom cursor effect
-document.addEventListener('mousemove', function(e) {
+document.addEventListener('mousemove', function (e) {
     const cursor = document.querySelector('.custom-cursor');
     if (cursor) {
         cursor.style.left = e.clientX + 'px';
@@ -344,11 +344,11 @@ document.addEventListener('mousemove', function(e) {
 });
 
 // Keyboard navigation
-document.addEventListener('keydown', function(e) {
+document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
         const navMenu = document.getElementById('nav-menu');
         const navToggle = document.getElementById('nav-toggle');
-        
+
         if (navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
             navToggle.classList.remove('active');
@@ -373,12 +373,12 @@ images.forEach(img => imageObserver.observe(img));
 
 // Service Worker registration for PWA capabilities
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
         navigator.serviceWorker.register('/sw.js')
-            .then(function(registration) {
+            .then(function (registration) {
                 console.log('ServiceWorker registration successful');
             })
-            .catch(function(error) {
+            .catch(function (error) {
                 console.log('ServiceWorker registration failed');
             });
     });

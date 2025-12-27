@@ -167,7 +167,8 @@
             </div>
 
             <div class="skills-grid">
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="skill-item">
                     <div class="skill-info">
                         <h3>HTML</h3>
                         <span class="skill-percentage">90%</span>
@@ -177,7 +178,7 @@
                     </div>
                 </div>
 
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-item">
                     <div class="skill-info">
                         <h3>CSS</h3>
                         <span class="skill-percentage">85%</span>
@@ -187,27 +188,27 @@
                     </div>
                 </div>
 
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-item">
                     <div class="skill-info">
                         <h3>JavaScript</h3>
-                        <span class="skill-percentage">80%</span>
+                        <span class="skill-percentage">70%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-width="80"></div>
+                        <div class="skill-progress" data-width="70"></div>
                     </div>
                 </div>
 
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="skill-item">
                     <div class="skill-info">
                         <h3>React</h3>
-                        <span class="skill-percentage">75%</span>
+                        <span class="skill-percentage">50%</span>
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-progress" data-width="75"></div>
+                        <div class="skill-progress" data-width="50"></div>
                     </div>
                 </div>
 
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="skill-item">
                     <div class="skill-info">
                         <h3>Python</h3>
                         <span class="skill-percentage">85%</span>
@@ -217,7 +218,7 @@
                     </div>
                 </div>
 
-                <div class="skill-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="skill-item">
                     <div class="skill-info">
                         <h3>MySQL</h3>
                         <span class="skill-percentage">70%</span>
@@ -226,6 +227,7 @@
                         <div class="skill-progress" data-width="70"></div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -266,8 +268,7 @@
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-image">
-                        <img src="Required images\Maintanence_Img.jpg"
-                            alt="Weather App">
+                        <img src="Required images\Maintanence_Img.jpg" alt="Weather App">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Maintenance Application</h3>
@@ -335,42 +336,25 @@
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="project-image">
-                        <img src="Required images\coming-soon.jpg" alt="Chat Application">
+                        <img src="Required images\Ai Therapist.png" alt="Chat Application">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Upcoming Project</h3>
+                        <h3 class="project-title">Ai Therapist</h3>
                         <p class="project-description">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, dolorem.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Socket.io</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">React</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary">View Live</a>
-                            <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+                            Developed a virtual therapist chatbot using Flask and Python that interacts with users and
+                            provides
+                            motivational responses based on emotional context.
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="project-image">
-                        <img src="Required images\coming-soon.jpg" alt="Data Visualization">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Upcoming Project</h3>
-                        <p class="project-description">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perspiciatis soluta quaerat.
                         </p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
                         </div>
                         <div class="project-links">
                             <a href="#" class="btn btn-sm btn-primary">View Live</a>
-                            <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
+                            <a href="https://github.com/Mr-Codervenkat/AI_Therapist/tree/master/Mindful%20Machines%20Navigating%20Mental%20Wellness%20with%20an%20AI%20Therapist"
+                                class="btn btn-sm btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -465,6 +449,16 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const skills = document.querySelectorAll(".skill-progress");
+
+            skills.forEach(skill => {
+                const value = skill.getAttribute("data-width");
+                skill.style.width = value + "%";
+            });
+        });
+    </script>
 </body>
 
 </html>
