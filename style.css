@@ -665,8 +665,9 @@ html {
 
 .contact-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
     gap: 60px;
+
 }
 
 .contact-info h3 {
