@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Venkat S | Software Developer Portfolio</title>
+    <title>Venkat S | Software Engineer</title>
+    <meta name="description" content="Software Engineer building backend systems and REST APIs with Python, Django, React and MySQL.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -16,116 +16,257 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader" id="preloader">
-        <div class="loader">
-            <div class="loader-inner"></div>
-        </div>
-    </div>
+    <div class="preloader" id="preloader"><div class="loader"><div class="loader-inner"></div></div></div>
 
-    <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Mr Coder Venkat S</a>
+                <a href="#home">Venkat S</a>
                 <p style="font-weight: bold;">EVERYTHING IS A WIN OR LESSON</p>
             </div>
-
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Education</a></li>
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-
             <div class="nav-controls">
-                <div class="nav-toggle" id="nav-toggle">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <div class="nav-toggle" id="nav-toggle"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-container">
             <div class="hero-content" data-aos="fade-up">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Venkat S</span>
-                </h1>
-                <h2 class="hero-subtitle">
-                    <span class="typed-text"></span>
-                    <span class="cursor">&nbsp;</span>
-                </h2>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Venkat S</span></h1>
+                <h2 class="hero-subtitle"><span class="typed-text"></span><span class="cursor">&nbsp;</span></h2>
                 <p class="hero-description">
-                    Passionate about creating beautiful, functional web experiences and solving complex problems with
-                    code.
+                    Software Engineer building healthcare and business applications with Python, Django, React and
+                    MySQL. I design REST APIs, model data, and ship features that real users depend on.
                 </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="Required images/Venkat_Resume.pdf" class="btn btn-secondary" id="download-resume">Download
-                        Resume</a>
+                    <a href="Required images/Venkat_Resume.pdf" class="btn btn-secondary" id="download-resume">Download Resume</a>
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-                <div class="hero-img-container">
-                    <img src="Required images/photo.jpg" alt="Developer" class="hero-img">
+                <div class="editor">
+                    <div class="editor-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="editor-file">engineer.py</span></div>
+                    <div class="editor-body">
+                        <div class="hero-img-container"><img src="Required images/photo.jpg" alt="Venkat S" class="hero-img"></div>
+<pre><code><span class="k">class</span> <span class="n">Engineer()</span>:
+    <span class="c"># backend-leaning, full-stack</span>
+    name  = <span class="s">"Venkat S"</span>
+    role  = <span class="s">"Software Engineer"</span>
+    stack = [<span class="s">"Python"</span>, <span class="s">"Django"</span>,
+             <span class="s">"React"</span>, <span class="s">"MySQL"</span>]
+    city  = <span class="s">"Chennai"</span>
+    open_to_work = <span class="k">True</span></code></pre>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
+        <div class="scroll-indicator"><div class="scroll-arrow"></div></div>
     </section>
 
-    <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Get to know me better</p>
+                <h2 class="section-title">👋 About Me</h2>
+                <p class="section-subtitle">Backend-leaning full-stack engineer</p>
             </div>
+            <div class="about-text-only" data-aos="fade-up">
+                <p>I'm a Software Engineer at Vesoftometic Solution Pvt Ltd, working on a Hospital Information
+                    Management System (HIMS) that covers patient records, billing, laboratory and pharmacy
+                    operations. I build the Django and MySQL backend and the REST APIs behind it.</p>
+                <p>Before that, I was a Software Developer Trainee at Sarvesh Software Solutions, where I built
+                    traceability software that pulled real-time PLC machine data into a central database and
+                    automated data-processing workflows in Python.</p>
+                <p>I'm pursuing an MCA at the University of Madras and building full-stack products on the side,
+                    from hotel management to AI tools. I'm looking for a software engineer role where I can work on
+                    backend systems and grow across the stack.</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="about-content">
-                <div class="about-text" data-aos="fade-right">
-                    <p>👋 Hi there! I'm a Software Developer at Vesoftometic Solution Pvt Ltd, where I build
-                        efficient, scalable, and user-friendly software applications that enhance performance and
-                        simplify automation workflows. My work bridges technology and problem-solving — from
-                        developing reliable systems to ensuring seamless user experiences.</p>
-
-                    <p>💡 Previously, I worked as a Software Developer Trainee at Sarvesh Software Solutions, where I
-                        gained hands-on experience building traceability software and automating data-processing
-                        workflows. That role helped me strengthen my technical foundation and ability to deliver
-                        fast, effective solutions.</p>
-
-                    <p>🚀 I'm passionate about using technology to solve real-world challenges — automating
-                        processes, designing intuitive interfaces, and improving product performance. I also enjoy
-                        exploring creative projects, content creation, and staying updated with the latest trends in
-                        web development and AI.</p>
-
-                    <p>🎯 Currently, I'm focused on growing as a Full-Stack Developer while pursuing my MCA, applying
-                        my skills to meaningful, high-impact projects.
-                        🤝 Let's connect and collaborate to create something valuable together!</p>
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">💼 Work Experience</h2>
+                <p class="section-subtitle">Where I've worked and what I've built</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Engineer</h3>
+                            <span class="timeline-date">Mar 2026 - Present</span>
+                        </div>
+                        <p class="timeline-company">Vesoftometic Solution Pvt Ltd</p>
+                        <ul class="timeline-list">
+                            <li>Developed and enhanced backend modules for a Hospital Information Management System (HIMS) covering patient records, billing, laboratory, and pharmacy operations.</li>
+                            <li>Designed and maintained RESTful APIs and database-driven features using Python, Django, and MySQL.</li>
+                            <li>Implemented bug fixes, performance improvements, and new functionality based on user and business requirements, collaborating directly with stakeholders.</li>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="about-image" data-aos="fade-left">
-                    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400"
-                        alt="About Me">
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Developer Trainee (Internship)</h3>
+                            <span class="timeline-date">Sep 2025 - Dec 2025</span>
+                        </div>
+                        <p class="timeline-company">Sarvesh Software Solutions</p>
+                        <ul class="timeline-list">
+                            <li>Built traceability software integrating real-time data from PLC (Programmable Logic Controller) machines into a centralized database.</li>
+                            <li>Automated data-processing workflows using Python to improve system efficiency and reliability.</li>
+                            <li>Collaborated with a cross-functional team to troubleshoot and enhance automation workflows.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">🚀 Projects</h2>
+                <p class="section-subtitle">Systems I've designed and built</p>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card featured" data-aos="fade-up">
+                    <div class="project-content">
+                        <span class="project-badge">Featured</span>
+                        <h3 class="project-title">🏨 HMS Pro: Hotel Management Platform</h3>
+                        <p class="project-meta">Full-stack · Architecture, API design, frontend</p>
+                        <ul class="project-points">
+                            <li>Architected a full-stack platform with modules for rooms, reservations, billing, food orders, inventory, staff, and assets.</li>
+                            <li>Built a live operations dashboard with date-filtered reporting and auto-refresh polling.</li>
+                            <li>Built an inventory module with stock tracking and purchase order workflows.</li>
+                            <li>Secured the API with JWT authentication; managed client state with Zustand.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span><span class="tech-tag">Django REST Framework</span><span class="tech-tag">React.js</span><span class="tech-tag">MySQL</span><span class="tech-tag">JWT</span><span class="tech-tag">Zustand</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mr-Codervenkat/hms" target="_blank" rel="noopener" class="btn btn-sm btn-primary">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <span class="project-badge">Recent</span>
+                        <h3 class="project-title">💎 Jewelry Counter Billing App</h3>
+                        <p class="project-meta">Mobile app · Built for a jewelry shop</p>
+                        <ul class="project-points">
+                            <li>Calculates each item's price at invoice time from live weight, metal rate, purity and GST settings, so prices never go stale.</li>
+                            <li>Custom staff login with page-level permissions for shop staff, without creating an auth account per person.</li>
+                            <li>Designed printable barcode labels for jewelry tags, showing purity, HUID and weight details.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span><span class="tech-tag">Expo</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Supabase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-content">
+                        <h3 class="project-title">🛠️ Maintenance Management Application</h3>
+                        <p class="project-meta">Full-stack · Python, React, MySQL</p>
+                        <ul class="project-points">
+                            <li>Secure authentication with full CRUD operations on maintenance records.</li>
+                            <li>Alerts and change-history tracking for an audit trail of every update.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span><span class="tech-tag">React JS</span><span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-content">
+                        <h3 class="project-title">🎙️ Speech to Text &amp; Text to Speech</h3>
+                        <p class="project-meta">Desktop app · Python</p>
+                        <ul class="project-points">
+                            <li>Transcribes audio files and microphone input using OpenAI Whisper.</li>
+                            <li>Offline text-to-speech with pyttsx3, with configurable voice and speech rate, in a Tkinter UI.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span><span class="tech-tag">Tkinter</span><span class="tech-tag">pyttsx3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mr-Codervenkat/Text_To_Speech_App" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="project-content">
+                        <h3 class="project-title">🧠 AI Therapist Chatbot</h3>
+                        <p class="project-meta">Web app · Flask</p>
+                        <ul class="project-points">
+                            <li>Chatbot that gives motivational responses based on the emotional context of the user's message.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mr-Codervenkat/AI_Therapist/tree/master/Mindful%20Machines%20Navigating%20Mental%20Wellness%20with%20an%20AI%20Therapist" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-content">
+                        <h3 class="project-title">🛒 ShipTech E-commerce UI</h3>
+                        <p class="project-meta">Frontend · Responsive storefront</p>
+                        <ul class="project-points">
+                            <li>Tech-focused storefront UI designed as a partner store for Amazon.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">Bootstrap</span><span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mr-codervenkat.github.io/Ship_tech/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">View Live</a>
+                            <a href="https://github.com/Mr-Codervenkat/Ship_tech" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="project-content">
+                        <h3 class="project-title">🚕 Call Taxi Booking UI</h3>
+                        <p class="project-meta">Frontend · Responsive design</p>
+                        <ul class="project-points">
+                            <li>Responsive taxi booking website built with plain HTML, CSS and JavaScript.</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mr-codervenkat.github.io/Taxi-Booking-Web/" target="_blank" rel="noopener" class="btn btn-sm btn-primary">View Live</a>
+                            <a href="https://github.com/Mr-Codervenkat/Taxi-Booking-Web" target="_blank" rel="noopener" class="btn btn-sm btn-secondary">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">My Skills</h2>
+                <h2 class="section-title">⚡ My Skills</h2>
                 <p class="section-subtitle">Technologies I work with</p>
             </div>
 
@@ -195,6 +336,7 @@
                         <div class="skill-progress" data-width="85"></div>
                     </div>
                 </div>
+
                 <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
                     <div class="skill-info">
                         <div class="skill-name">
@@ -251,337 +393,73 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section class="experience" id="experience">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Work Experience</h2>
-                <p class="section-subtitle">Where I've worked and what I've built</p>
-            </div>
-
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-up">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Developer</h3>
-                            <span class="timeline-date">Mar 2026 - Present</span>
-                        </div>
-                        <p class="timeline-company">Vesoftometic Solution Pvt Ltd</p>
-                        <ul class="timeline-list">
-                            <li>Developed and enhanced backend modules for a Hospital Information Management System
-                                (HIMS) covering patient records, billing, laboratory, and pharmacy operations.</li>
-                            <li>Designed and maintained RESTful APIs and database-driven features using Python,
-                                Django, and MySQL.</li>
-                            <li>Implemented bug fixes, performance improvements, and new functionality based on user
-                                and business requirements, collaborating directly with stakeholders.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3>Software Developer Trainee - Internship</h3>
-                            <span class="timeline-date">Sep 2025 - Dec 2025</span>
-                        </div>
-                        <p class="timeline-company">Sarvesh Software Solutions</p>
-                        <ul class="timeline-list">
-                            <li>Built traceability software integrating real-time data from PLC (Programmable Logic
-                                Controller) machines into a centralized database.</li>
-                            <li>Automated data-processing workflows using Python to improve system efficiency and
-                                reliability.</li>
-                            <li>Collaborated with a cross-functional team to troubleshoot and enhance automation
-                                workflows.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">My Projects</h2>
-                <p class="section-subtitle">Some of my recent work</p>
-            </div>
-
-            <div class="projects-grid">
-
-                <div class="project-card featured" data-aos="fade-up" data-aos-delay="50">
-                    <div class="project-image project-image-icon">
-                        <i class="fa-solid fa-hotel"></i>
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">Recent</span>
-                        <h3 class="project-title">HMS Pro — Full-Stack Hotel Management System</h3>
-                        <p class="project-description">
-                            Architected a full-stack hotel management platform with modules for room management,
-                            reservations, billing, food orders, inventory, staff, and asset management. Built a live
-                            operations dashboard with date-filtered reporting and auto-refresh polling, plus an
-                            inventory module with stock tracking and purchase order workflows.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Django REST Framework</span>
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">JWT</span>
-                            <span class="tech-tag">Zustand</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary">View Live</a>
-                            <a href="https://github.com/Mr-Codervenkat/hms" target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-image">
-                        <img src="Required images/Shiptech.png" alt="E-commerce Platform">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Mini-E-commerce Platform</h3>
-                        <p class="project-description">
-                            ShipTech is a tech-focused e-commerce website UI designed as a partner storefront for
-                            Amazon.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">BOOTSTRAP</span>
-                            <span class="tech-tag">JAVASCRIPT</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://mr-codervenkat.github.io/Ship_tech/" target="_blank"
-                                class="btn btn-sm btn-primary">View Live</a>
-                            <a href="https://github.com/Mr-Codervenkat/Ship_tech" target="_blank"
-                                class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-                    <div class="project-image">
-                        <img src="Required images/Maintanence_Img.jpg" alt="Maintenance Application">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Maintenance Application</h3>
-                        <p class="project-description">
-                            Maintenance Management Application using Python and SQL with secure authentication, CRUD
-                            operations, alerts, and change history tracking.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">React JS</span>
-                            <span class="tech-tag">MySQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary">View Live</a>
-                            <a href="#" class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-image">
-                        <img src="Required images/Believe taxi.png" alt="Call Taxi Booking UI">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Call Taxi Booking UI</h3>
-                        <p class="project-description">
-                            This project is a basic taxi booking website developed in responsive design.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JAVASCRIPT</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://mr-codervenkat.github.io/Taxi-Booking-Web/" target="_blank"
-                                class="btn btn-sm btn-primary">View Live</a>
-                            <a href="https://github.com/Mr-Codervenkat/Taxi-Booking-Web" target="_blank"
-                                class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="250">
-                    <div class="project-image">
-                        <img src="Required images/Portfolio-img.png" alt="Portfolio Website">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Portfolio Website</h3>
-                        <p class="project-description">
-                            Responsive portfolio website with smooth animations and modern design.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://mr-codervenkat.github.io/Portfolio/" class="btn btn-sm btn-primary">View
-                                Live</a>
-                            <a href="https://github.com/Mr-Codervenkat/Portfolio"
-                                class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="Required images/Ai Therapist.png" alt="Ai Therapist">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Ai Therapist</h3>
-                        <p class="project-description">
-                            Developed a virtual therapist chatbot using Flask and Python that interacts with users and
-                            provides motivational responses based on emotional context.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary">View Live</a>
-                            <a href="https://github.com/Mr-Codervenkat/AI_Therapist/tree/master/Mindful%20Machines%20Navigating%20Mental%20Wellness%20with%20an%20AI%20Therapist"
-                                target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="project-image">
-                        <img src="Required images\T2Speech.png"
-                            alt="Speech to Text & Text To Speech">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Speech to Text & Text To Speech</h3>
-                        <p class="project-description">
-                            Developed a desktop application that converts speech to text and text to speech through an
-                            intuitive Tkinter-based user interface.
-                            Integrated OpenAI Whisper for accurate speech recognition and transcription from audio files
-                            and microphone input.
-                            Implemented pyttsx3 for offline text-to-speech conversion with configurable voice selection
-                            and speech rate.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Tkinter</span>
-                            <span class="tech-tag">pyttsx3</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-sm btn-primary">View Live</a>
-                            <a href="https://github.com/Mr-Codervenkat/Text_To_Speech_App"
-                               target="_blank" class="btn btn-sm btn-secondary">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
     <section class="certifications" id="certifications">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Certifications</h2>
-                <p class="section-subtitle">Courses and training I've completed</p>
+                <h2 class="section-title">🎓 Education &amp; Training</h2>
+                <p class="section-subtitle">Degrees, courses and certifications</p>
             </div>
-
             <div class="cert-grid">
                 <div class="cert-card" data-aos="fade-up">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3 class="cert-title">MCA (Pursuing)</h3>
+                    <p class="cert-issuer">University of Madras</p>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <h3 class="cert-title">BCA</h3>
+                    <p class="cert-issuer">Pachaiyappas College for Men</p>
+                    <span class="cert-date">77%</span>
+                </div>
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
-                    <h3 class="cert-title">Python Full Stack Development Training</h3>
+                    <h3 class="cert-title">Python Full Stack Development</h3>
                     <p class="cert-issuer">Besant Technologies</p>
                     <span class="cert-date">Aug 2024 - Mar 2025</span>
                 </div>
-
-                <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
                     <h3 class="cert-title">Claude Code in Action</h3>
                     <p class="cert-issuer">Anthropic</p>
                     <span class="cert-date">Feb 2026</span>
                 </div>
-
-                <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
-                    <h3 class="cert-title">Spoken English &amp; MS Office Training</h3>
-                    <p class="cert-issuer">Magic Bus Foundation</p>
-                    <span class="cert-date">Apr 2024 - Jun 2024</span>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="section-subtitle">Let's work together</p>
+                <h2 class="section-title">📬 Get In Touch</h2>
+                <p class="section-subtitle">Open to software engineer roles</p>
             </div>
-
             <div class="contact-content">
                 <div class="contact-info" data-aos="fade-right">
-                    <h3>Let's talk about new opportunity</h3>
-                    <p>
-                        I'm always interested in new opportunities and exciting projects.
-                    </p>
-
+                    <h3>Let's talk about your team</h3>
+                    <p>I'm looking for a software engineer role. Email me or message me on LinkedIn.</p>
                     <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>Skvenkat63@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+91 6385357693</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>India</span>
-                        </div>
+                        <div class="contact-item"><i class="fas fa-envelope"></i><span>Skvenkat63@gmail.com</span></div>
+                        <div class="contact-item"><i class="fas fa-phone"></i><span>+91 6385357693</span></div>
+                        <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Chennai, India</span></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2026 Venkat. All rights reserved.</p>
-                </div>
-
+                <div class="footer-text"><p>&copy; 2026 Venkat. All rights reserved.</p></div>
                 <div class="footer-social">
-                    <a href="https://github.com/Mr-Codervenkat" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/skvenkat2005" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" target="_blank" class="social-link">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" target="_blank" class="social-link">
-                        <i class="fab fa-facebook"></i>
-                    </a>
+                    <a href="https://github.com/Mr-Codervenkat" target="_blank" rel="noopener" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/skvenkat2005" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>

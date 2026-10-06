@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Typing animation
     const typedTextElement = document.querySelector('.typed-text');
-    const textArray = ['Full-Stack Developer', 'Django & React Enthusiast', 'Tech Explorer'];
+    const textArray = ['Software Engineer', 'Python & Django Backend', 'Full-Stack Developer'];
     let textIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
